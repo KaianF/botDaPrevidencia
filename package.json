@@ -2,12 +2,19 @@
   "name": "botdaprevidencia",
   "version": "1.0.0",
   "description": "bot discord",
-  "main": "main.js",
+  "main": "index.js",
   "dependencies": {
     "discord.js": "^11.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "nodemon": "^1.19.1"
+  },
   "scripts": {
+    "start": "nodemon --exec babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
